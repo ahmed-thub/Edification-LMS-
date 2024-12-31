@@ -1,0 +1,54 @@
+﻿@model Edification.Models.course_data
+<div class="Container">
+
+    <h1>.Net Framework</h1>
+    <br />
+    <br />
+    <br />
+    <h2>.Net Framework Five Main Points</h2>
+
+    <h4>
+        1) : Framework for Building Applications: The .NET Framework is a software development framework developed by Microsoft. It provides a comprehensive and consistent programming model for building applications across various platforms, including Windows desktop, web, mobile, and embedded systems.
+
+
+
+    </h4>
+    <br />
+    <h4>2) :  Common Language Runtime (CLR): At the core of the .NET Framework is the Common Language Runtime (CLR), which provides an environment to run .NET programs. CLR manages memory, handles exceptions, and provides various services such as garbage collection and type safety.</h4>
+    <br />
+    <h4>3) :  Unified Class Libraries: The .NET Framework includes a vast library of classes and functions known as the .NET Class Library. This library provides reusable code for common programming tasks, such as file I/O, networking, database interaction, and user interface development.</h4>
+    <br />
+    <h4>4) :  Language Interoperability: The .NET Framework supports multiple programming languages, including C#, Visual Basic .NET (VB.NET), F#, and others. These languages can interoperate seamlessly within the same application, allowing developers to choose the most suitable language for their tasks.</h4>
+    <br />
+    <h4>5) :  Development Tools and IDE: Microsoft provides integrated development environments (IDEs) such as Visual Studio for developing .NET applications. Visual Studio offers features like code editing, debugging, profiling, and project management tools that streamline the development process.</h4>
+
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <h1 class="text-center m">Select Course .Net Framework</h1>
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Name</label>
+                <input type="text" class="form-control" asp-for="datatable.CourseName" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">user Email</label>
+                <input type="email" class="form-control" asp-for="datatable.CourseEmail" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Password</label>
+                <input type="password" class="form-control" asp-for="datatable.CoursePassword" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Courses Joining</label>
+                <input type="date" class="form-control" asp-for="datatable.CoursesJoining" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <br />
+        <br />
+
+
+    </div>

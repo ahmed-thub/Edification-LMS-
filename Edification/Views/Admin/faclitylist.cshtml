@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Facuility>
+
+
+<div class="content-body">
+
+    <div class="row page-titles mx-0">
+        <div class="col p-md-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- row -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+               @*          <h5 class="card-title">Facuility List</h5> *@
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Facuility Name</th>
+                                        <th>Facuility Email</th>
+                                        <th>Action</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    @foreach (var temp in Model)
+
+                                    {
+                                        <tr>
+                                            <th scope="row">@temp.FacuilityId</th>
+                                            <td>@temp.FacuilityName</td>
+                                            <td>@temp.FacuilityEmail</td>
+                                            <td>
+                                                <a class="btn btn-primary btn-sm" asp-controller="Admin" asp-action="updatefacuility" asp-route-id="@temp.FacuilityId">Update</a>
+                                                <a class="btn btn-danger btn-sm" asp-controller="Admin" asp-action="deletefacliuity" asp-route-id="@temp.FacuilityId">Delete</a>
+
+                                            </td>
+
+
+                                        </tr>
+                                    }
+
+
+                                    </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #/ container -->
+</div>

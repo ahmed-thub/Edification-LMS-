@@ -1,0 +1,59 @@
+﻿@model Edification.Models.course_data
+
+<div class="Container">
+
+    <h1>C-Sharp</h1>
+    <br />
+    <br />
+    <br />
+    <h2>C-Sharp Five Main Points</h2>
+
+    <h4>
+        1) : Object-Oriented Language: C# is a modern, object-oriented programming language developed by Microsoft. It supports concepts such as classes, inheritance, polymorphism, encapsulation, and abstraction, making it suitable for building complex and scalable applications.
+
+
+    </h4>
+    <br />
+    <h4>
+        2) :  Managed Code: C# code is compiled into an intermediate language (IL) that runs on the Common Language Runtime (CLR) in the .NET Framework or .NET Core. The CLR manages memory, handles exceptions, and provides various services like garbage collection, ensuring robust and efficient execution of C# programs.
+
+    </h4>
+    <br />
+    <h4>
+        3) :  Syntax Similar to C++ and Java: C# syntax is similar to C++ and Java, making it easier for developers familiar with these languages to learn and adopt C#. It includes features like strong typing, type inference, lambda expressions, and LINQ (Language-Integrated Query) for querying data.
+
+    </h4>
+    <br />
+    <h4>4) :  Cross-Platform Development: With the introduction of .NET Core (now known as .NET 5 and later versions), C# is now cross-platform. Developers can build and run C# applications on various platforms, including Windows, Linux, and macOS, using tools like Visual Studio Code or JetBrains Rider.</h4>
+    <br />
+    <h4>5) :  Rich Ecosystem and Tooling: C# benefits from a rich ecosystem provided by Microsoft and the community. It has a comprehensive standard library (Base Class Library) and additional frameworks like ASP.NET for web development, Xamarin for mobile app development, and Unity for game development. Visual Studio is the primary IDE for C# development, offering advanced features for coding, debugging, and testing.</h4>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <h1 class="text-center m">Select Course C_Sharp</h1>
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Name</label>
+                <input type="text" class="form-control" asp-for="datatable.CourseName" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">user Email</label>
+                <input type="email" class="form-control" asp-for="datatable.CourseEmail" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Password</label>
+                <input type="password" class="form-control" asp-for="datatable.CoursePassword" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Courses Joining</label>
+                <input type="date" class="form-control" asp-for="datatable.CoursesJoining" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <br />
+        <br />
+
+
+    </div>

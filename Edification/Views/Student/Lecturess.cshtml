@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Lecture>
+<div class="row">
+
+
+    <div class="col-md-4"></div>
+
+
+
+
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+
+                    <th scope="col">Lecture Id</th>
+
+                    <th scope="col">Lecture Name</th>
+
+                    <th scope="col">Lecture link</th>
+
+                    <th scope="col">Quiz Nature</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+
+                @foreach (var item in Model)
+
+                {
+                    <tr>
+
+
+                        <td>@item.LectureId</td>
+
+                        <td>@item.LectureName</td>
+
+                        <td>
+                            @item.LectureLink
+                        </td>
+
+                        <td>@item.QuizNature</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

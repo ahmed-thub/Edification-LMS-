@@ -1,0 +1,68 @@
+﻿@model IEnumerable<UsersRegistration>
+
+
+<div class="content-body">
+
+    <div class="row page-titles mx-0">
+        <div class="col p-md-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+            </ol>
+        </div>
+    </div>
+    <!-- row -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                    @*     <h5 class="card-title">User List</h5> *@
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Roll</th>
+                                        <th>Action</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    @foreach (var temp in Model)
+
+                                    {
+                                        <tr>
+                                            <th scope="row">@temp.UsersId</th>
+                                            <td>@temp.UsersName</td>
+                                            <td>@temp.UsersEmail</td>
+                                            <td>@temp.UsersPassword</td>
+                                            <td>@temp.UsersRole</td>
+
+                                            <td>
+
+                                                <a class="btn btn-primary btn-sm" asp-controller="Admin" asp-action="update" asp-route-id="@temp.UsersId">Update</a>
+                                                <a class="btn btn-danger btn-sm" asp-controller="Admin" asp-action="delete" asp-route-id="@temp.UsersId">Delete</a>
+
+
+                                            </td>
+                                        </tr>
+                                    }
+                                
+
+                                    </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #/ container -->
+</div>

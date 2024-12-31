@@ -1,0 +1,50 @@
+﻿@model Edification.Models.course_data
+
+
+<div class="Container">
+    <div class="Python">
+        <h1>Javascript</h1>
+        <br />
+        <br />
+        <br />
+        <h2>Javascript Five Main Points</h2>
+
+        <h4>1) : Interpreted Language: JavaScript is an interpreted language, meaning it doesn't need to be compiled before execution. Instead, it is directly executed by the browser or runtime environment.</h4>
+        <br />
+        <h4>2) :  Client-Side Scripting: JavaScript is primarily used as a client-side scripting language in web development. It runs in the browser of the end user, enabling interactive web pages and dynamic content.</h4>
+        <br />
+        <h4>3) :  Object-Oriented: JavaScript is a prototype-based, object-oriented language. It uses objects to store data and functions, and objects can be created and modified at runtime.</h4>
+        <br />
+        <h4>4) :  Event-Driven: JavaScript is inherently event-driven, meaning it can respond to events like mouse clicks, keyboard inputs, or page loading. This makes it suitable for creating interactive interfaces and handling user actions.</h4>
+        <br />
+        <h4>5) :  Cross-platform: JavaScript is supported by all major web browsers, making it a versatile language for web development. Additionally, JavaScript can now be used on the server-side with environments like Node.js, extending its capabilities beyond the browser.</h4>
+        <br />
+        <div class="container">
+
+            <h1 class="text-center m">Select Course javascript</h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Course Id</label>
+                    <input type="number" class="form-control" asp-for="datatable.CoursesId" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">User Name</label>
+                    <input type="text" class="form-control" asp-for="datatable.CourseName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">user Email</label>
+                    <input type="email" class="form-control" asp-for="datatable.CourseEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">User Password</label>
+                    <input type="password" class="form-control" asp-for="datatable.CoursePassword" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Courses Joining</label>
+                    <input type="date" required class="form-control" asp-for="datatable.CoursesJoining" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

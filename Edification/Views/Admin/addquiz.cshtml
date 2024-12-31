@@ -1,0 +1,71 @@
+﻿@model Edification.Models.querytable;  
+
+<div class="container row">
+
+
+    
+        <div class="col-md-4"></div>
+
+        <div class="col-md-8">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Quiz_total_marks</label>
+                <input type="number" asp-for="QuizQuestions.QuestionsTotalNum" class="form-control"  >
+            </div>
+
+                <div class="mb-3 form-check">
+                    <label class="form-check-label" for="exampleCheck1">Quiz</label>
+                <select class="form-control" asp-for="QuizQuestions.QuizId">
+                    
+
+                    @foreach (var temp in Model.QuizNature)
+                    {
+                        <option value="@temp.QuizId">@temp.QuizName</option>
+                    }
+
+                   
+                </select>
+                </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Question</label>
+                <input type="text" class="form-control" asp-for="QuizQuestions.Question" >
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Right_Answer</label>
+                <input type="text" class="form-control"  asp-for="QuizQuestions.RightAnswer" >
+
+            </div>
+
+         
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Option_One</label>
+                <input type="text"  class="form-control" asp-for="QuizQuestions.OptionOne" >
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Option_Two</label>
+                <input type="text" class="form-control" asp-for="QuizQuestions.OptionTwo" >
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Option_Three</label>
+                <input type="text" class="form-control" asp-for="QuizQuestions.OptionThree">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+
+</div>
+    
+
+   
+
+</div>

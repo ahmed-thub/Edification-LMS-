@@ -1,0 +1,24 @@
+﻿@model Edification.Models.UsersRegistration
+
+
+ <div class="container">
+    <h1 class="text-center m">Login</h1>
+    <form method="post" enctype="application/x-www-form-urlencoded">
+      
+        
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Email</label>
+            <input type="email" asp-for="UsersEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <br />
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Password</label>
+            <input type="password" asp-for="UsersPassword" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        </form>
+        </div>
+     

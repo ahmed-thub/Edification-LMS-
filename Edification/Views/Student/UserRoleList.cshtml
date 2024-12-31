@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StudentEnrollCourse>
+<div class="row">
+
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-6">
+        <h1>User Profile </h1>
+        <br />
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th scope="col">STUDENT Email</th>
+                    <th scope="col">USER Name</th>
+                    <th scope="col">COURSE Name</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    @foreach (var item in Model)
+                    {
+                        <td>@item.Users.UsersEmail</td>
+
+                        <td>@item.Users.UsersName</td>
+
+                        <td>@item.Courses.CoursesName</td>
+                    }
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+

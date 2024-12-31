@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Facuility>
+
+<div class="row">
+    <div class="col-md-4"></div>
+
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+
+                    <th scope="col">Facuility id</th>
+
+                    <th scope="col">Facuility Name</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tr>
+
+                    @foreach (var item in Model)
+
+                    {
+
+                        @* <option value="" scope="row">@item.FacuilityId</option> *@
+                        <td>@item.FacuilityId</td>
+
+                        <td>@item.FacuilityName</td>
+
+                    }
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

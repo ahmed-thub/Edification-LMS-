@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\css\default-css.css" />
+    <None Include="wwwroot\assets\css\font-awesome.min.css" />
+    <None Include="wwwroot\assets\css\magnific-popup.css" />
+    <None Include="wwwroot\assets\css\owl.carousel.min.css" />
+    <None Include="wwwroot\assets\css\responsive.css" />
+    <None Include="wwwroot\assets\css\slicknav.min.css" />
+    <None Include="wwwroot\assets\css\styles.css" />
+    <None Include="wwwroot\assets\css\typography.css" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\assets\images\404.png" />
+    <None Include="wwwroot\assets\images\about\abt-right-thumb.jpg" />
+    <None Include="wwwroot\assets\images\angle-left.png" />
+    <None Include="wwwroot\assets\images\angle-right.png" />
+    <None Include="wwwroot\assets\images\author\auth1.jpg" />
+    <None Include="wwwroot\assets\images\author\blog-post-auth1.jpg" />
+    <None Include="wwwroot\assets\images\author\blog-post-auth2.jpg" />
+    <None Include="wwwroot\assets\images\author\blog-post-auth3.jpg" />
+    <None Include="wwwroot\assets\images\author\cs-comment-auth1.jpg" />
+    <None Include="wwwroot\assets\images\author\cs-comment-auth2.jpg" />
+    <None Include="wwwroot\assets\images\author\cs-comment-auth3.jpg" />
+    <None Include="wwwroot\assets\images\author\cs-post-author1.jpg" />
+    <None Include="wwwroot\assets\images\bg\abt2-bg.jpg" />
+    <None Include="wwwroot\assets\images\bg\bg1.jpg" />
+    <None Include="wwwroot\assets\images\bg\crumb-bg.jpg" />
+    <None Include="wwwroot\assets\images\bg\cta-bg-bottom.jpg" />
+    <None Include="wwwroot\assets\images\bg\flwr-bg.jpg" />
+    <None Include="wwwroot\assets\images\bg\hero-bg.jpg" />
+    <None Include="wwwroot\assets\images\bg\hero-bg2.jpg" />
+    <None Include="wwwroot\assets\images\bg\slider-bg1.jpg" />
+    <None Include="wwwroot\assets\images\bg\slider-bg2.jpg" />
+    <None Include="wwwroot\assets\images\bg\slider-bg3.jpg" />
+    <None Include="wwwroot\assets\images\bg\slider.jpg" />
+    <None Include="wwwroot\assets\images\bg\take-toure-bg.jpg" />
+    <None Include="wwwroot\assets\images\bg\tst-bg-shape.png" />
+    <None Include="wwwroot\assets\images\blog\blog-details.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail1.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail2.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail3.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail4.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail5.jpg" />
+    <None Include="wwwroot\assets\images\blog\blog-thumbnail6.jpg" />
+    <None Include="wwwroot\assets\images\course\course-details.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img1.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img2.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img3.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img4.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img5.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-img6.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-small-thumb1.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-small-thumb2.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-small-thumb3.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-small-thumb4.jpg" />
+    <None Include="wwwroot\assets\images\course\cs-small-thumb5.jpg" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-icon1.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-icon2.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-icon3.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-icon4.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-img1.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-img2.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-img3.png" />
+    <None Include="wwwroot\assets\images\feature-archive\ftvc-img4.png" />
+    <None Include="wwwroot\assets\images\icon\abt-titleshape.png" />
+    <None Include="wwwroot\assets\images\icon\cross-cursor.png" />
+    <None Include="wwwroot\assets\images\icon\hb-bottom-shape.png" />
+    <None Include="wwwroot\assets\images\icon\logo-black.png" />
+    <None Include="wwwroot\assets\images\icon\logo-middle.png" />
+    <None Include="wwwroot\assets\images\icon\logo.png" />
+    <None Include="wwwroot\assets\images\icon\title-top-shape.png" />
+    <None Include="wwwroot\assets\images\map.png" />
+    <None Include="wwwroot\assets\images\sidebar\banner-img.jpg" />
+    <None Include="wwwroot\assets\images\teacher\tch-left-thumb.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member1.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member2.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member3.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member4.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member5.jpg" />
+    <None Include="wwwroot\assets\images\teacher\teacher-member6.jpg" />
+    <None Include="wwwroot\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\js\google-maps.js" />
+    <None Include="wwwroot\assets\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\assets\js\jquery.slicknav.min.js" />
+    <None Include="wwwroot\assets\js\owl.carousel.min.js" />
+    <None Include="wwwroot\assets\js\plugins.js" />
+    <None Include="wwwroot\assets\js\scripts.js" />
+    <None Include="wwwroot\assets\js\vendor\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\assets\js\vendor\modernizr-2.8.3.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://json.schemastore.org/backportrc.json" /></VisualStudio></ProjectExtensions>
+
+</Project>
